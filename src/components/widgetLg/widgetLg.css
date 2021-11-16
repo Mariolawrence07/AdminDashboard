@@ -1,0 +1,18 @@
+.widgetLg {
+  flex: 2;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.widgetLgTitle {
+  font-style: 22px;
+  font-weight: 600;
+}
+.widgetLgImg{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
