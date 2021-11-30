@@ -1,16 +1,19 @@
 import React from "react";
 import LineStyleIcon from "@mui/icons-material/LineStyle";
-import TimelineIcon from '@mui/icons-material/Timeline';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import PersonIcon from '@mui/icons-material/Person';
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import MailIcon from '@mui/icons-material/Mail';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import WorkIcon from '@mui/icons-material/Work';
-import ReportIcon from '@mui/icons-material/Report';
-import "./sidebar.css"
+import TimelineIcon from "@mui/icons-material/Timeline";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import PersonIcon from "@mui/icons-material/Person";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import MailIcon from "@mui/icons-material/Mail";
+import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import WorkIcon from "@mui/icons-material/Work";
+import ReportIcon from "@mui/icons-material/Report";
+import "./sidebar.css";
+
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -18,12 +21,14 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarlist">
+            <Link to="/" className="link">
             <li className="sidebarListItem active">
               <LineStyleIcon className="sidebarIcon" />
               Home
             </li>
+            </Link>
             <li className="sidebarListItem">
-              <TimelineIcon className="sidebarIcon"/>
+              <TimelineIcon className="sidebarIcon" />
               Analytics
             </li>
             <li className="sidebarListItem">
@@ -35,20 +40,24 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarlist">
-            <li className="sidebarListItem ">
-              <PersonIcon className="sidebarIcon" />
-              Users
-            </li>
-            <li className="sidebarListItem">
-              <TimelineIcon className="sidebarIcon"/>
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebarListItem ">
+                <PersonIcon className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/product" className="link">
+              <li className="sidebarListItem">
+                <TimelineIcon className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <MonetizationOnIcon className="sidebarIcon" />
               Transactions
             </li>
             <li className="sidebarListItem">
-              <BarChartIcon  className="sidebarIcon" />
+              <BarChartIcon className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -61,11 +70,11 @@ export default function Sidebar() {
               Mail
             </li>
             <li className="sidebarListItem">
-              <DynamicFeedIcon className="sidebarIcon"/>
+              <DynamicFeedIcon className="sidebarIcon" />
               Feedback
             </li>
             <li className="sidebarListItem">
-              < ChatBubbleOutlineIcon className="sidebarIcon" />
+              <ChatBubbleOutlineIcon className="sidebarIcon" />
               Messages
             </li>
           </ul>
@@ -78,7 +87,7 @@ export default function Sidebar() {
               Manage
             </li>
             <li className="sidebarListItem">
-              <TimelineIcon className="sidebarIcon"/>
+              <TimelineIcon className="sidebarIcon" />
               Analytics
             </li>
             <li className="sidebarListItem">
@@ -87,7 +96,6 @@ export default function Sidebar() {
             </li>
           </ul>
         </div>
-        
       </div>
     </div>
   );

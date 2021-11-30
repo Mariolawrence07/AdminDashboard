@@ -3,13 +3,16 @@ import "./topbar.css";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import LanguageIcon from "@mui/icons-material/Language";
 import SettingsIcon from "@mui/icons-material/Settings";
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
+          <Link to="/" className="link">
           <span className="logo">lamaadmin</span>
+          </Link>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">

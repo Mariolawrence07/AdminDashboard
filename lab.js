@@ -3,7 +3,7 @@
 //     let splitedIterable = str.split("")
 //     let resultArr = []
 //     for(let i = 0; i < splitedIterable.length; i++){
-      
+
 //       if(splitedIterable[i] === splitedIterable[i - 1] ) {
 //         continue;
 //       }else{
@@ -15,19 +15,18 @@
 //   }
 //   console.log(uniqueInOrder("AAAABBBCCDAABBB"))
 
-  function isValidIP(str) {
-    let splitedStr = str.split(".")
-    console.log(splitedStr.length)
-    for( let i = 0; i < splitedStr.length; i++){
-      if(splitedStr.length === 4 && splitedStr[i][0] !== 0){
-          console.log(splitedStr[i])
-        return true
-      }
-    }
-    return false;
-  }
-  console.log(isValidIP("137.255.156.100"))
-
+// function isValidIP(str) {
+//   let splitedStr = str.split(".")
+//   console.log(splitedStr.length)
+//   for( let i = 0; i < splitedStr.length; i++){
+//     if(splitedStr.length === 4 && splitedStr[i][0] !== 0){
+//         console.log(splitedStr[i])
+//       return true
+//     }
+//   }
+//   return false;
+// }
+// console.log(isValidIP("137.255.156.100"))
 
 //  const anchor = document.querySelectorAll('.link-3');
 // const storedString = localStorage.getItem("recentlyviewed");
@@ -52,7 +51,6 @@
 //   return false;
 // }
 
-
 // let child = '<div class="w-dyn-list"><div role="list" class="w-dyn-items">';
 // let count = 5;
 
@@ -66,3 +64,20 @@
 //   const x = document.querySelector(".recently-viewed")
 //   x.insertAdjacentHTML('beforeend', child);
 // }
+
+function isIsogram(str) {
+  //...
+
+  let splitStr = str.toLowerCase();
+
+  for (let i = 0; i <= splitStr.length; i++) {
+    for (let j = i + 1; j <= splitStr.length; j++) {
+      if (splitStr[i] === splitStr[j]) {
+        return false;
+      }
+    }
+  }
+
+  return true;
+}
+console.log(isIsogram("ada"));

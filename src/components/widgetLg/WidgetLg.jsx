@@ -2,7 +2,7 @@ import "./widgetLg.css";
 
 export default function WidgetLg() {
     const Button = ({type}) => {
-        return <button className={"widgetLgButtton" + type}>{type}</button>
+        return <button className={"widgetLgButton " + type}>{type}</button>
     }
   return (
     <div className="widgetLg">
@@ -63,7 +63,7 @@ export default function WidgetLg() {
           </td>
         </tr>
         <tr className="widgetLgTr">
-          <td className="widgetLgImg">
+          <td className="widgetLgUser">
             <img
               src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
               alt=""
@@ -75,7 +75,7 @@ export default function WidgetLg() {
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgAmount">$122.00</td>
           <td className="widgetLgStatus">
-              <Button type="Approved"/>
+              <Button  type="Approved"/>
           </td>
         </tr>
       </table>

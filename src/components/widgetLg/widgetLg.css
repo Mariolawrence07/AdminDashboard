@@ -10,9 +10,44 @@
   font-style: 22px;
   font-weight: 600;
 }
+.widgetLgTable{
+  width: 100%;
+  border-spacing: 20px;
+}
+.widgetLgTh{
+  text-align: left;
+}
+.widgetLgDate,.widgetLgAmount{
+  font-weight: 300;
+
+}
+.widgetLgUser{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+
+}
 .widgetLgImg{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  margin-right: 20px;
+}
+.widgetLgButton{
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+}
+.widgetLgButton.Approved{
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+.widgetLgButton.Declined{
+  background-color: #fff0f1;
+  color: #d95087;
+}
+.widgetLgButton.Pending{
+  background-color: #ebf1fe;
+  color: #2a7ade;
 }

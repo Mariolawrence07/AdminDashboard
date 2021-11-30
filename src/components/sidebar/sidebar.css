@@ -29,9 +29,9 @@
 }
 .sidebarListItem.active,
 .sidebarListItem:hover {
-  background-color: rgb(251, 251, 255 );
+  background-color: rgb(251, 251, 255);
 }
-.sidebarIcon{
-    margin-right: 5px;
-    font-size: 20px !important;
+.sidebarIcon {
+  margin-right: 5px;
+  font-size: 20px !important;
 }
